@@ -24,6 +24,7 @@ typedef struct s_dictionary
 
 t_dictionary	*create_dict(size_t size);
 void			free_dict(t_dictionary	*dict);
+t_dictionary	*resize_dict(t_dictionary	*dict, size_t new_capacity);
 t_dict_item		*get_value(t_dictionary	*dict, t_key key);
 t_dict_item		*set_value(t_dictionary	*dict, t_key key, char	*value);
 #endif
